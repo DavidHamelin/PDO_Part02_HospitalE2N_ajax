@@ -1,0 +1,50 @@
+
+#homePage
+{
+    /* min-height: 25rem; */
+    padding: 13% 0 15% 0;
+    background: top url("../img/doctor.jpg") no-repeat;
+    background-size: cover;
+    min-height: 700px;
+}
+
+@keyframes animTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .animateTitle1
+{
+    animation: animTitle 1.5s ease-out;
+}
+.animateTitle2
+{
+    opacity: 0;
+    animation: animTitle 1s ease-out forwards;
+    animation-delay: 1s;
+} */
+
+/* Tableau responsive */
+@media all and (max-width: 600px)
+{
+    tbody, tr
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    thead
+    {
+        display: none;
+    }
+    #removeIfSmall
+    {
+        display: none;
+    }
+}
